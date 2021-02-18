@@ -1,0 +1,15 @@
+{
+  "diff": true,
+  "extension": ["js"],
+  "package": "../package.json",
+  "reporter": "spec",
+  "require": "@babel/register",
+  "slow": 1500,
+  "timeout": 20000,
+  "recursive": true,
+  "file": ["test/integration/helpers.js"],
+  "ui": "bdd",
+  "spec": "test/**/*.spec.js",
+  "watch-files": ["lib/**/*.js", "test/**/*.js"],
+  "watch-ignore": ["lib/vendor"]
+  }

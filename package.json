@@ -1,0 +1,24 @@
+{
+  "name": "primeiraapi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "babel-node ./server.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "test:integration": "NODE_ENV=test mocha --json test/integration/mocha.json test/integration/**/*_spec.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-node6": "^11.0.0",
+    "chai": "^4.3.0",
+    "mocha": "^8.3.0",
+    "supertest": "^6.1.3"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1"
+  }
+}
